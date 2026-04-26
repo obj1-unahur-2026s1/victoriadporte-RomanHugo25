@@ -1,0 +1,24 @@
+import victoria.*
+import disciplinas.*
+import elementos.*
+import comite.*
+
+describe "test para gestionar presupuesto para olipiadas" {
+
+  test "victoria practica judo" {
+    victoria.altura(150)
+    victoria.disciplina(judo)
+    victoria.elemento(judogi)
+    victoria.entrenadores(4)
+    assert.equals(8380,victoria.presupuesto())
+  }
+
+    test "victoria practica tenis" {
+    victoria.altura(210)
+    victoria.disciplina(tenis)
+    victoria.elemento(raqueta)
+    victoria.entrenadores(2)
+    assert.equals(2615,victoria.presupuesto())
+  }
+
+}
